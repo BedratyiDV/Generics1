@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    public class CurrencyRate<T>: CurrencyRateBase<T>
+    public class CurrencyRate<T>: CurrencyRateBase<T> where T : struct
     {
         public string Currency { get; set; }
 
